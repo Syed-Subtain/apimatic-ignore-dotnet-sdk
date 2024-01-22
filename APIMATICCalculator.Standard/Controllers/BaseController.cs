@@ -9,6 +9,7 @@ namespace APIMATICCalculator.Standard.Controllers
     using APIMATICCalculator.Standard.Http.Response;
     using APIMATICCalculator.Standard.Utilities;
     using APIMatic.Core;
+    using APIMatic.Core.Http.Configuration;
     using APIMatic.Core.Response;
     using System;
 
@@ -27,10 +28,11 @@ namespace APIMATICCalculator.Standard.Controllers
         protected static ErrorCase<HttpRequest, HttpResponse, HttpContext, ApiException> CreateErrorCase(string reason, Func<string, HttpContext, ApiException> error, bool isErrorTemplate = false)
             => new ErrorCase<HttpRequest, HttpResponse, HttpContext, ApiException>(reason, error, isErrorTemplate);
 
-        protected ApiCall<HttpRequest, HttpResponse, HttpContext, ApiException, T, T> CreateApiCall<T>()
+        protected ApiCall<HttpRequest, HttpResponse, HttpContext, ApiException, T, T> CreateApiCall<T>(ArraySerialization arraySerialization = ArraySerialization.Indexed)
             => new ApiCall<HttpRequest, HttpResponse, HttpContext, ApiException, T, T>(
                 globalConfiguration,
-                compatibilityFactory
+                compatibilityFactory,
+                serialization: arraySerialization
             );
 
         private static readonly CompatibilityFactory compatibilityFactory = new CompatibilityFactory();

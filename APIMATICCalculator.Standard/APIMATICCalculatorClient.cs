@@ -87,7 +87,8 @@ namespace APIMATICCalculator.Standard
         public Builder ToBuilder()
         {
             Builder builder = new Builder()
-                .Environment(this.Environment);
+                .Environment(this.Environment)
+                .HttpClientConfig(config => config.Build());
 
             return builder;
         }

@@ -59,6 +59,6 @@ namespace APIMATICCalculator.Standard.Controllers
                       .Query(_query => _query.Setup("y", input.Y))))
               .ResponseHandler(_responseHandler => _responseHandler
                   .Deserializer(_response => (Models.OperationTypeEnum)Enum.Parse(typeof(Models.OperationTypeEnum), _response)))
-              .ExecuteAsync(cancellationToken);
+              .ExecuteAsync(cancellationToken).ConfigureAwait(false);
     }
 }
