@@ -5,7 +5,7 @@ using System.Runtime.Serialization;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
 
-namespace APIMATICCALCULATOR.Standard
+namespace ApimaticCalcu.Standard
 {
     /// <summary>
     /// Available environments.

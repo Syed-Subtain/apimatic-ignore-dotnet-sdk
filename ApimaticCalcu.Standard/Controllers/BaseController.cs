@@ -1,17 +1,17 @@
 // <copyright file="BaseController.cs" company="APIMatic">
 // Copyright (c) APIMatic. All rights reserved.
 // </copyright>
-using APIMATICCALCULATOR.Standard.Exceptions;
-using APIMATICCALCULATOR.Standard.Http.Client;
-using APIMATICCALCULATOR.Standard.Http.Request;
-using APIMATICCALCULATOR.Standard.Http.Response;
-using APIMATICCALCULATOR.Standard.Utilities;
 using APIMatic.Core;
 using APIMatic.Core.Http.Configuration;
 using APIMatic.Core.Response;
+using ApimaticCalcu.Standard.Exceptions;
+using ApimaticCalcu.Standard.Http.Client;
+using ApimaticCalcu.Standard.Http.Request;
+using ApimaticCalcu.Standard.Http.Response;
+using ApimaticCalcu.Standard.Utilities;
 using System;
 
-namespace APIMATICCALCULATOR.Standard.Controllers
+namespace ApimaticCalcu.Standard.Controllers
 {
     /// <summary>
     /// The base class for all controller classes.

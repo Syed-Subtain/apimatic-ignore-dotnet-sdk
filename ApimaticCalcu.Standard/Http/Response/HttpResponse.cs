@@ -5,7 +5,7 @@ using System.IO;
 using System.Collections.Generic;
 using APIMatic.Core.Types.Sdk;
 
-namespace APIMATICCALCULATOR.Standard.Http.Response
+namespace ApimaticCalcu.Standard.Http.Response
 {
     /// <summary>
     /// HttpResponse stores necessary information about the http response.
