@@ -9,13 +9,13 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <AssemblyName>ApimaticignoreSDK</AssemblyName>
-    <Version>9.8.7.0</Version>
+    <Version>3.6.54.0</Version>
     <Authors>Subtain</Authors>
     <Owners></Owners>
     <Product>APIMATICCALCULATOR.Standard</Product>
     <Copyright>Copyright ©  2019</Copyright>
-    <AssemblyVersion>9.8.7.0</AssemblyVersion>
-    <FileVersion>9.8.7.0</FileVersion>
+    <AssemblyVersion>3.6.54.0</AssemblyVersion>
+    <FileVersion>3.6.54.0</FileVersion>
     <Description>This is a description</Description>
     <LangVersion>7.3</LangVersion>
     <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
