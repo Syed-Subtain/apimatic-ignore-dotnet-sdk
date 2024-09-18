@@ -5,7 +5,7 @@ using APIMatic.Core.Types.Sdk;
 using System;
 using System.IO;
 
-namespace ApimaticCALCULATOR.Standard.Http.Client
+namespace APIMATICCALCULATOR.Standard.Http.Client
 {
     /// <summary>
     /// An DTO class to capture information for file uploads.

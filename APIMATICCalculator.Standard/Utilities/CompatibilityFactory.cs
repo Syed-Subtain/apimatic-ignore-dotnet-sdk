@@ -3,12 +3,12 @@
 // </copyright>
 using APIMatic.Core.Types.Sdk;
 using APIMatic.Core.Utilities;
-using ApimaticCALCULATOR.Standard.Exceptions;
-using ApimaticCALCULATOR.Standard.Http.Client;
-using ApimaticCALCULATOR.Standard.Http.Request;
-using ApimaticCALCULATOR.Standard.Http.Response;
+using APIMATICCALCULATOR.Standard.Exceptions;
+using APIMATICCALCULATOR.Standard.Http.Client;
+using APIMATICCALCULATOR.Standard.Http.Request;
+using APIMATICCALCULATOR.Standard.Http.Response;
 
-namespace ApimaticCALCULATOR.Standard.Utilities
+namespace APIMATICCALCULATOR.Standard.Utilities
 {
     internal class CompatibilityFactory : ICompatibilityFactory<HttpRequest, HttpResponse, HttpContext, ApiException>
     {
