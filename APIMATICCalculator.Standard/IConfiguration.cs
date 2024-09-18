@@ -1,12 +1,12 @@
 // <copyright file="IConfiguration.cs" company="APIMatic">
 // Copyright (c) APIMatic. All rights reserved.
 // </copyright>
-namespace APIMATICCalculator.Standard
-{
-    using System;
-    using System.Net;
-    using APIMATICCalculator.Standard.Models;
+using System;
+using System.Net;
+using ApimaticCALCULATOR.Standard.Models;
 
+namespace ApimaticCALCULATOR.Standard
+{
     /// <summary>
     /// IConfiguration.
     /// </summary>

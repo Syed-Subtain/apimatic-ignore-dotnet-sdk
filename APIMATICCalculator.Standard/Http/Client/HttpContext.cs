@@ -1,12 +1,12 @@
 // <copyright file="HttpContext.cs" company="APIMatic">
 // Copyright (c) APIMatic. All rights reserved.
 // </copyright>
-namespace APIMATICCalculator.Standard.Http.Client
+using APIMatic.Core.Types.Sdk;
+using ApimaticCALCULATOR.Standard.Http.Request;
+using ApimaticCALCULATOR.Standard.Http.Response;
+
+namespace ApimaticCALCULATOR.Standard.Http.Client
 {
-    using APIMatic.Core.Types.Sdk;
-    using APIMATICCalculator.Standard.Http.Request;
-    using APIMATICCalculator.Standard.Http.Response;
-    
     /// <summary>
     /// Represents the contextual information of HTTP request and response.
     /// </summary>

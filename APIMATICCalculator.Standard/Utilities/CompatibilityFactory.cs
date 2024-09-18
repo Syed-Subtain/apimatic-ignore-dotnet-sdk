@@ -1,16 +1,15 @@
 // <copyright file="CompatibilityFactory.cs" company="APIMatic">
 // Copyright (c) APIMatic. All rights reserved.
 // </copyright>
+using APIMatic.Core.Types.Sdk;
+using APIMatic.Core.Utilities;
+using ApimaticCALCULATOR.Standard.Exceptions;
+using ApimaticCALCULATOR.Standard.Http.Client;
+using ApimaticCALCULATOR.Standard.Http.Request;
+using ApimaticCALCULATOR.Standard.Http.Response;
 
-namespace APIMATICCalculator.Standard.Utilities
+namespace ApimaticCALCULATOR.Standard.Utilities
 {
-    using APIMatic.Core.Types.Sdk;
-    using APIMatic.Core.Utilities;
-    using APIMATICCalculator.Standard.Exceptions;
-    using APIMATICCalculator.Standard.Http.Client;
-    using APIMATICCalculator.Standard.Http.Request;
-    using APIMATICCalculator.Standard.Http.Response;
-
     internal class CompatibilityFactory : ICompatibilityFactory<HttpRequest, HttpResponse, HttpContext, ApiException>
     {
         public ApiException CreateApiException(string reason, CoreContext<CoreRequest, CoreResponse> context) =>

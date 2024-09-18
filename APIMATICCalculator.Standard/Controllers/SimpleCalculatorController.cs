@@ -1,27 +1,27 @@
 // <copyright file="SimpleCalculatorController.cs" company="APIMatic">
 // Copyright (c) APIMatic. All rights reserved.
 // </copyright>
-namespace APIMATICCalculator.Standard.Controllers
-{
-    using System;
-    using System.Collections.Generic;
-    using System.Dynamic;
-    using System.Globalization;
-    using System.IO;
-    using System.Linq;
-    using System.Text;
-    using System.Threading;
-    using System.Threading.Tasks;
-    using APIMatic.Core;
-    using APIMatic.Core.Types;
-    using APIMatic.Core.Utilities;
-    using APIMatic.Core.Utilities.Date.Xml;
-    using APIMATICCalculator.Standard;
-    using APIMATICCalculator.Standard.Http.Client;
-    using APIMATICCalculator.Standard.Utilities;
-    using Newtonsoft.Json.Converters;
-    using System.Net.Http;
+using System;
+using System.Collections.Generic;
+using System.Dynamic;
+using System.Globalization;
+using System.IO;
+using System.Linq;
+using System.Text;
+using System.Threading;
+using System.Threading.Tasks;
+using APIMatic.Core;
+using APIMatic.Core.Types;
+using APIMatic.Core.Utilities;
+using APIMatic.Core.Utilities.Date.Xml;
+using ApimaticCALCULATOR.Standard;
+using ApimaticCALCULATOR.Standard.Http.Client;
+using ApimaticCALCULATOR.Standard.Utilities;
+using Newtonsoft.Json.Converters;
+using System.Net.Http;
 
+namespace ApimaticCALCULATOR.Standard.Controllers
+{
     /// <summary>
     /// SimpleCalculatorController.
     /// </summary>

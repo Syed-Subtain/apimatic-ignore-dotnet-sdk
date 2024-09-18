@@ -1,12 +1,12 @@
 // <copyright file="HttpRequest.cs" company="APIMatic">
 // Copyright (c) APIMatic. All rights reserved.
 // </copyright>
-namespace APIMATICCalculator.Standard.Http.Request
-{
-    using System.Net.Http;
-    using System.Collections.Generic;
-    using APIMatic.Core.Types.Sdk;
+using System.Net.Http;
+using System.Collections.Generic;
+using APIMatic.Core.Types.Sdk;
 
+namespace ApimaticCALCULATOR.Standard.Http.Request
+{
     /// <summary>
     /// HttpRequest stores necessary information about the http request.
     /// </summary>

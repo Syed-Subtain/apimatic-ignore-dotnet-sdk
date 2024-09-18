@@ -1,10 +1,10 @@
 // <copyright file="ApiHelper.cs" company="APIMatic">
 // Copyright (c) APIMatic. All rights reserved.
 // </copyright>
-namespace APIMATICCalculator.Standard.Utilities
-{
-    using APIMatic.Core.Utilities;
+using APIMatic.Core.Utilities;
 
+namespace ApimaticCALCULATOR.Standard.Utilities
+{
     /// <summary>
     /// ApiHelper class contains a bunch of helper methods.
     /// </summary>

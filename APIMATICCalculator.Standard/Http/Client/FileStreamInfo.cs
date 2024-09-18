@@ -1,12 +1,12 @@
 // <copyright file="FileStreamInfo.cs" company="APIMatic">
 // Copyright (c) APIMatic. All rights reserved.
 // </copyright>
-namespace APIMATICCalculator.Standard.Http.Client
-{
-    using APIMatic.Core.Types.Sdk;
-    using System;
-    using System.IO;
+using APIMatic.Core.Types.Sdk;
+using System;
+using System.IO;
 
+namespace ApimaticCALCULATOR.Standard.Http.Client
+{
     /// <summary>
     /// An DTO class to capture information for file uploads.
     /// </summary>

@@ -1,21 +1,21 @@
 // <copyright file="GetCalculateInput.cs" company="APIMatic">
 // Copyright (c) APIMatic. All rights reserved.
 // </copyright>
-namespace APIMATICCalculator.Standard.Models
-{
-    using System;
-    using System.Collections.Generic;
-    using System.ComponentModel;
-    using System.IO;
-    using System.Linq;
-    using System.Text;
-    using System.Threading.Tasks;
-    using APIMATICCalculator.Standard;
-    using APIMATICCalculator.Standard.Utilities;
-    using APIMatic.Core.Utilities.Converters;
-    using Newtonsoft.Json;
-    using Newtonsoft.Json.Converters;
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.IO;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using APIMatic.Core.Utilities.Converters;
+using ApimaticCALCULATOR.Standard;
+using ApimaticCALCULATOR.Standard.Utilities;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Converters;
 
+namespace ApimaticCALCULATOR.Standard.Models
+{
     /// <summary>
     /// GetCalculateInput.
     /// </summary>
