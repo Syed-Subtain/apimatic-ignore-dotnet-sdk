@@ -11,12 +11,12 @@ The following parameters are configurable for the API Client:
 The API client can be initialized as follows:
 
 ```csharp
-ApimaticCalcuClient client = new ApimaticCalcuClient.Builder()
-    .Environment(ApimaticCalcu.Standard.Environment.Production)
+APIMATICCalculatorClient client = new APIMATICCalculatorClient.Builder()
+    .Environment(APIMATICCalculator.Standard.Environment.Production)
     .Build();
 ```
 
-## Apimatic CalcuClient Class
+## APIMATIC CalculatorClient Class
 
 The gateway for the SDK. This class acts as a factory for the Controllers and also holds the configuration of the SDK.
 
@@ -39,11 +39,11 @@ The gateway for the SDK. This class acts as a factory for the Controllers and al
 | Name | Description | Return Type |
 |  --- | --- | --- |
 | `GetBaseUri(Server alias = Server.Calculator)` | Gets the URL for a particular alias in the current environment and appends it with template parameters. | `string` |
-| `ToBuilder()` | Creates an object of the Apimatic CalcuClient using the values provided for the builder. | `Builder` |
+| `ToBuilder()` | Creates an object of the APIMATIC CalculatorClient using the values provided for the builder. | `Builder` |
 
-## Apimatic CalcuClient Builder Class
+## APIMATIC CalculatorClient Builder Class
 
-Class to build instances of Apimatic CalcuClient.
+Class to build instances of APIMATIC CalculatorClient.
 
 ### Methods
 

@@ -1,5 +1,5 @@
 
-# Getting Started with Apimatic Calcu
+# Getting Started with APIMATIC Calculator
 
 ## Introduction
 
@@ -10,15 +10,19 @@ Simple calculator API hosted on APIMATIC
 If you are building with .NET CLI tools then you can also use the following command:
 
 ```bash
-dotnet add package ApimaticignoreSDK --version 6.39.6
+dotnet add package sdks.io --version 3.0.12
 ```
 
 You can also view the package at:
-https://www.nuget.org/packages/ApimaticignoreSDK/6.39.6
+https://www.nuget.org/packages/sdks.io/3.0.12
+
+## Test the SDK
+
+The generated SDK also contain one or more Tests, which are contained in the Tests project. In order to invoke these test cases, you will need `NUnit 3.0 Test Adapter Extension` for Visual Studio. Once the SDK is complied, the test cases should appear in the Test Explorer window. Here, you can click `Run All` to execute these test cases.
 
 ## Initialize the API Client
 
-**_Note:_** Documentation for the client can be found [here.](https://www.github.com/Syed-Subtain/apimatic-ignore-dotnet-sdk/tree/6.39.6/doc/client.md)
+**_Note:_** Documentation for the client can be found [here.](https://www.github.com/syed-subtain/apimatic-ignore-dotnet-sdk/tree/3.0.12/doc/client.md)
 
 The following parameters are configurable for the API Client:
 
@@ -30,24 +34,24 @@ The following parameters are configurable for the API Client:
 The API client can be initialized as follows:
 
 ```csharp
-ApimaticCalcuClient client = new ApimaticCalcuClient.Builder()
-    .Environment(ApimaticCalcu.Standard.Environment.Production)
+APIMATICCalculatorClient client = new APIMATICCalculatorClient.Builder()
+    .Environment(APIMATICCalculator.Standard.Environment.Production)
     .Build();
 ```
 
 ## List of APIs
 
-* [Simple Calculator](https://www.github.com/Syed-Subtain/apimatic-ignore-dotnet-sdk/tree/6.39.6/doc/controllers/simple-calculator.md)
+* [Simple Calculator](https://www.github.com/syed-subtain/apimatic-ignore-dotnet-sdk/tree/3.0.12/doc/controllers/simple-calculator.md)
 
 ## Classes Documentation
 
-* [Utility Classes](https://www.github.com/Syed-Subtain/apimatic-ignore-dotnet-sdk/tree/6.39.6/doc/utility-classes.md)
-* [HttpRequest](https://www.github.com/Syed-Subtain/apimatic-ignore-dotnet-sdk/tree/6.39.6/doc/http-request.md)
-* [HttpResponse](https://www.github.com/Syed-Subtain/apimatic-ignore-dotnet-sdk/tree/6.39.6/doc/http-response.md)
-* [HttpStringResponse](https://www.github.com/Syed-Subtain/apimatic-ignore-dotnet-sdk/tree/6.39.6/doc/http-string-response.md)
-* [HttpContext](https://www.github.com/Syed-Subtain/apimatic-ignore-dotnet-sdk/tree/6.39.6/doc/http-context.md)
-* [HttpClientConfiguration](https://www.github.com/Syed-Subtain/apimatic-ignore-dotnet-sdk/tree/6.39.6/doc/http-client-configuration.md)
-* [HttpClientConfiguration Builder](https://www.github.com/Syed-Subtain/apimatic-ignore-dotnet-sdk/tree/6.39.6/doc/http-client-configuration-builder.md)
-* [IAuthManager](https://www.github.com/Syed-Subtain/apimatic-ignore-dotnet-sdk/tree/6.39.6/doc/i-auth-manager.md)
-* [ApiException](https://www.github.com/Syed-Subtain/apimatic-ignore-dotnet-sdk/tree/6.39.6/doc/api-exception.md)
+* [Utility Classes](https://www.github.com/syed-subtain/apimatic-ignore-dotnet-sdk/tree/3.0.12/doc/utility-classes.md)
+* [HttpRequest](https://www.github.com/syed-subtain/apimatic-ignore-dotnet-sdk/tree/3.0.12/doc/http-request.md)
+* [HttpResponse](https://www.github.com/syed-subtain/apimatic-ignore-dotnet-sdk/tree/3.0.12/doc/http-response.md)
+* [HttpStringResponse](https://www.github.com/syed-subtain/apimatic-ignore-dotnet-sdk/tree/3.0.12/doc/http-string-response.md)
+* [HttpContext](https://www.github.com/syed-subtain/apimatic-ignore-dotnet-sdk/tree/3.0.12/doc/http-context.md)
+* [HttpClientConfiguration](https://www.github.com/syed-subtain/apimatic-ignore-dotnet-sdk/tree/3.0.12/doc/http-client-configuration.md)
+* [HttpClientConfiguration Builder](https://www.github.com/syed-subtain/apimatic-ignore-dotnet-sdk/tree/3.0.12/doc/http-client-configuration-builder.md)
+* [IAuthManager](https://www.github.com/syed-subtain/apimatic-ignore-dotnet-sdk/tree/3.0.12/doc/i-auth-manager.md)
+* [ApiException](https://www.github.com/syed-subtain/apimatic-ignore-dotnet-sdk/tree/3.0.12/doc/api-exception.md)
 
