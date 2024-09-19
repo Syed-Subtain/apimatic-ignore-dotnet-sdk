@@ -1,12 +1,12 @@
 // <copyright file="ApiException.cs" company="APIMatic">
 // Copyright (c) APIMatic. All rights reserved.
 // </copyright>
-using APIMATICCALCULATOR.Standard.Http.Client;
-using APIMATICCALCULATOR.Standard.Http.Request;
-using APIMATICCALCULATOR.Standard.Http.Response;
 using APIMatic.Core.Types.Sdk;
+using ApimaticCalculator.Standard.Http.Client;
+using ApimaticCalculator.Standard.Http.Request;
+using ApimaticCalculator.Standard.Http.Response;
 
-namespace APIMATICCALCULATOR.Standard.Exceptions
+namespace ApimaticCalculator.Standard.Exceptions
 {
     /// <summary>
     /// This is the base class for all exceptions that represent an error response
