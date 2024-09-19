@@ -2,7 +2,7 @@
 // Copyright (c) APIMatic. All rights reserved.
 // </copyright>
 
-namespace ApimaticCalculator.Standard
+namespace APIMATICCALCULATOR.Standard
 {
     /// <summary>
     /// Available servers.

@@ -28,7 +28,7 @@ GetCalculateAsync(
 
 ## Response Type
 
-`Task<double>`
+[`Task<Models.OperationTypeEnum>`](../../doc/models/operation-type-enum.md)
 
 ## Example Usage
 
@@ -42,7 +42,7 @@ GetCalculateInput getCalculateInput = new GetCalculateInput
 
 try
 {
-    double? result = await simpleCalculatorController.GetCalculateAsync(getCalculateInput);
+    OperationTypeEnum? result = await simpleCalculatorController.GetCalculateAsync(getCalculateInput);
 }
 catch (ApiException e)
 {

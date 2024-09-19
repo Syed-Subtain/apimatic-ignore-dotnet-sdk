@@ -14,13 +14,13 @@ using APIMatic.Core;
 using APIMatic.Core.Types;
 using APIMatic.Core.Utilities;
 using APIMatic.Core.Utilities.Date.Xml;
-using ApimaticCalculator.Standard;
-using ApimaticCalculator.Standard.Http.Client;
-using ApimaticCalculator.Standard.Utilities;
+using APIMATICCALCULATOR.Standard;
+using APIMATICCALCULATOR.Standard.Http.Client;
+using APIMATICCALCULATOR.Standard.Utilities;
 using Newtonsoft.Json.Converters;
 using System.Net.Http;
 
-namespace ApimaticCalculator.Standard.Controllers
+namespace APIMATICCALCULATOR.Standard.Controllers
 {
     /// <summary>
     /// SimpleCalculatorController.
@@ -36,8 +36,8 @@ namespace ApimaticCalculator.Standard.Controllers
         /// Calculates the expression using the specified operation.
         /// </summary>
         /// <param name="input">Object containing request parameters.</param>
-        /// <returns>Returns the double response from the API call.</returns>
-        public double GetCalculate(
+        /// <returns>Returns the Models.OperationTypeEnum response from the API call.</returns>
+        public Models.OperationTypeEnum GetCalculate(
                 Models.GetCalculateInput input)
             => CoreHelper.RunTask(GetCalculateAsync(input));
 
@@ -46,11 +46,11 @@ namespace ApimaticCalculator.Standard.Controllers
         /// </summary>
         /// <param name="input">Object containing request parameters.</param>
         /// <param name="cancellationToken"> cancellationToken. </param>
-        /// <returns>Returns the double response from the API call.</returns>
-        public async Task<double> GetCalculateAsync(
+        /// <returns>Returns the Models.OperationTypeEnum response from the API call.</returns>
+        public async Task<Models.OperationTypeEnum> GetCalculateAsync(
                 Models.GetCalculateInput input,
                 CancellationToken cancellationToken = default)
-            => await CreateApiCall<double>()
+            => await CreateApiCall<Models.OperationTypeEnum>()
               .RequestBuilder(_requestBuilder => _requestBuilder
                   .Setup(HttpMethod.Get, "/{operation}")
                   .Parameters(_parameters => _parameters
@@ -58,7 +58,7 @@ namespace ApimaticCalculator.Standard.Controllers
                       .Query(_query => _query.Setup("x", input.X))
                       .Query(_query => _query.Setup("y", input.Y))))
               .ResponseHandler(_responseHandler => _responseHandler
-                  .Deserializer(_response => double.Parse(_response)))
+                  .Deserializer(_response => (Models.OperationTypeEnum)Enum.Parse(typeof(Models.OperationTypeEnum), _response)))
               .ExecuteAsync(cancellationToken).ConfigureAwait(false);
     }
 }

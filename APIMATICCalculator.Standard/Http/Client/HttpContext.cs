@@ -2,10 +2,10 @@
 // Copyright (c) APIMatic. All rights reserved.
 // </copyright>
 using APIMatic.Core.Types.Sdk;
-using ApimaticCalculator.Standard.Http.Request;
-using ApimaticCalculator.Standard.Http.Response;
+using APIMATICCALCULATOR.Standard.Http.Request;
+using APIMATICCALCULATOR.Standard.Http.Response;
 
-namespace ApimaticCalculator.Standard.Http.Client
+namespace APIMATICCALCULATOR.Standard.Http.Client
 {
     /// <summary>
     /// Represents the contextual information of HTTP request and response.
