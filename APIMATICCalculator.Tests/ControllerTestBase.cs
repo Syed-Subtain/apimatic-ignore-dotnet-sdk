@@ -6,12 +6,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using APIMATICCALCULATOR.Standard;
-using APIMATICCALCULATOR.Standard.Http.Client;
-using APIMATICCALCULATOR.Standard.Models;
+using ApimaticCalculator.Standard;
+using ApimaticCalculator.Standard.Http.Client;
+using ApimaticCalculator.Standard.Models;
 using NUnit.Framework;
 
-namespace APIMATICCALCULATOR.Tests
+namespace ApimaticCalculator.Tests
 {
     /// <summary>
     /// ControllerTestBase Class.
@@ -30,9 +30,9 @@ namespace APIMATICCALCULATOR.Tests
         internal HttpCallback HttpCallBack { get; private set; } = new HttpCallback();
 
         /// <summary>
-        /// Gets APIMATICCALCULATORClient Client.
+        /// Gets ApimaticCalculatorClient Client.
         /// </summary>
-        protected APIMATICCALCULATORClient Client { get; private set; }
+        protected ApimaticCalculatorClient Client { get; private set; }
 
         /// <summary>
         /// Set up the client.
@@ -40,7 +40,7 @@ namespace APIMATICCALCULATOR.Tests
         [OneTimeSetUp]
         public void SetUp()
         {
-            APIMATICCALCULATORClient config = APIMATICCALCULATORClient.CreateFromEnvironment();
+            ApimaticCalculatorClient config = ApimaticCalculatorClient.CreateFromEnvironment();
             this.Client = config.ToBuilder()
                 .HttpCallback(HttpCallBack)
                 .Build();

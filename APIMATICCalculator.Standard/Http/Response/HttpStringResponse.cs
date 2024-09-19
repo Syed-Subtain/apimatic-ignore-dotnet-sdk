@@ -4,7 +4,7 @@
 using System.IO;
 using System.Collections.Generic;
 
-namespace APIMATICCALCULATOR.Standard.Http.Response
+namespace ApimaticCalculator.Standard.Http.Response
 {
     /// <summary>
     /// HttpStringResponse inherits from HttpResponse and has additional property

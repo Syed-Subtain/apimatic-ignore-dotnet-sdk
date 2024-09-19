@@ -1,13 +1,13 @@
 // <copyright file="HttpCallback.cs" company="APIMatic">
 // Copyright (c) APIMatic. All rights reserved.
 // </copyright>
-using APIMATICCALCULATOR.Standard.Http.Request;
-using APIMATICCALCULATOR.Standard.Http.Response;
-using APIMATICCALCULATOR.Standard.Utilities;
+using ApimaticCalculator.Standard.Http.Request;
+using ApimaticCalculator.Standard.Http.Response;
+using ApimaticCalculator.Standard.Utilities;
 using APIMatic.Core.Types;
 using APIMatic.Core.Types.Sdk;
 
-namespace APIMATICCALCULATOR.Standard.Http.Client
+namespace ApimaticCalculator.Standard.Http.Client
 {
     /// <summary>
     /// To use for the capturing of the outgoing HTTP request and incoming Http response.

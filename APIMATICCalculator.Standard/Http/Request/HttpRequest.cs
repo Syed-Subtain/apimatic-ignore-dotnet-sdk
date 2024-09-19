@@ -5,7 +5,7 @@ using System.Net.Http;
 using System.Collections.Generic;
 using APIMatic.Core.Types.Sdk;
 
-namespace APIMATICCALCULATOR.Standard.Http.Request
+namespace ApimaticCalculator.Standard.Http.Request
 {
     /// <summary>
     /// HttpRequest stores necessary information about the http request.

@@ -1,21 +1,21 @@
-// <copyright file="APIMATICCALCULATORClient.cs" company="APIMatic">
+// <copyright file="ApimaticCalculatorClient.cs" company="APIMatic">
 // Copyright (c) APIMatic. All rights reserved.
 // </copyright>
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using APIMATICCALCULATOR.Standard.Controllers;
-using APIMATICCALCULATOR.Standard.Http.Client;
-using APIMATICCALCULATOR.Standard.Utilities;
 using APIMatic.Core;
+using ApimaticCalculator.Standard.Controllers;
+using ApimaticCalculator.Standard.Http.Client;
+using ApimaticCalculator.Standard.Utilities;
 
-namespace APIMATICCALCULATOR.Standard
+namespace ApimaticCalculator.Standard
 {
     /// <summary>
     /// The gateway for the SDK. This class acts as a factory for Controller and
     /// holds the configuration of the SDK.
     /// </summary>
-    public sealed class APIMATICCALCULATORClient : IConfiguration
+    public sealed class ApimaticCalculatorClient : IConfiguration
     {
         // A map of environments and their corresponding servers/baseurls
         private static readonly Dictionary<Environment, Dictionary<Enum, string>> EnvironmentsMap =
@@ -34,7 +34,7 @@ namespace APIMATICCALCULATOR.Standard
         private readonly HttpCallback httpCallback;
         private readonly Lazy<SimpleCalculatorController> simpleCalculator;
 
-        private APIMATICCALCULATORClient(
+        private ApimaticCalculatorClient(
             Environment environment,
             HttpCallback httpCallback,
             IHttpClientConfiguration httpClientConfiguration)
@@ -88,7 +88,7 @@ namespace APIMATICCALCULATOR.Standard
         }
 
         /// <summary>
-        /// Creates an object of the APIMATICCALCULATORClient using the values provided for the builder.
+        /// Creates an object of the ApimaticCalculatorClient using the values provided for the builder.
         /// </summary>
         /// <returns>Builder.</returns>
         public Builder ToBuilder()
@@ -112,12 +112,12 @@ namespace APIMATICCALCULATOR.Standard
         /// <summary>
         /// Creates the client using builder.
         /// </summary>
-        /// <returns> APIMATICCALCULATORClient.</returns>
-        internal static APIMATICCALCULATORClient CreateFromEnvironment()
+        /// <returns> ApimaticCalculatorClient.</returns>
+        internal static ApimaticCalculatorClient CreateFromEnvironment()
         {
             var builder = new Builder();
 
-            string environment = System.Environment.GetEnvironmentVariable("APIMATICCALCULATOR_STANDARD_ENVIRONMENT");
+            string environment = System.Environment.GetEnvironmentVariable("APIMATIC_CALCULATOR_STANDARD_ENVIRONMENT");
 
             if (environment != null)
             {
@@ -132,7 +132,7 @@ namespace APIMATICCALCULATOR.Standard
         /// </summary>
         public class Builder
         {
-            private Environment environment = APIMATICCALCULATOR.Standard.Environment.Production;
+            private Environment environment = ApimaticCalculator.Standard.Environment.Production;
             private HttpClientConfiguration.Builder httpClientConfig = new HttpClientConfiguration.Builder();
             private HttpCallback httpCallback;
 
@@ -177,12 +177,12 @@ namespace APIMATICCALCULATOR.Standard
             }
 
             /// <summary>
-            /// Creates an object of the APIMATICCALCULATORClient using the values provided for the builder.
+            /// Creates an object of the ApimaticCalculatorClient using the values provided for the builder.
             /// </summary>
-            /// <returns>APIMATICCALCULATORClient.</returns>
-            public APIMATICCALCULATORClient Build()
+            /// <returns>ApimaticCalculatorClient.</returns>
+            public ApimaticCalculatorClient Build()
             {
-                return new APIMATICCALCULATORClient(
+                return new ApimaticCalculatorClient(
                     environment,
                     httpCallback,
                     httpClientConfig.Build());

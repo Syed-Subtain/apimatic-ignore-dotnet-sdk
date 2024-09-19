@@ -7,16 +7,16 @@ using System.Globalization;
 using System.IO;
 using System.Threading.Tasks;
 using APIMatic.Core.Utilities;
-using APIMATICCALCULATOR.Standard;
-using APIMATICCALCULATOR.Standard.Controllers;
-using APIMATICCALCULATOR.Standard.Exceptions;
-using APIMATICCALCULATOR.Standard.Http.Client;
-using APIMATICCALCULATOR.Standard.Http.Response;
-using APIMATICCALCULATOR.Standard.Utilities;
+using ApimaticCalculator.Standard;
+using ApimaticCalculator.Standard.Controllers;
+using ApimaticCalculator.Standard.Exceptions;
+using ApimaticCalculator.Standard.Http.Client;
+using ApimaticCalculator.Standard.Http.Response;
+using ApimaticCalculator.Standard.Utilities;
 using Newtonsoft.Json.Converters;
 using NUnit.Framework;
 
-namespace APIMATICCALCULATOR.Tests
+namespace ApimaticCalculator.Tests
 {
     /// <summary>
     /// SimpleCalculatorControllerTest.

@@ -3,7 +3,7 @@
 // </copyright>
 using APIMatic.Core.Utilities;
 
-namespace APIMATICCALCULATOR.Standard.Utilities
+namespace ApimaticCalculator.Standard.Utilities
 {
     /// <summary>
     /// ApiHelper class contains a bunch of helper methods.
