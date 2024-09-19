@@ -3,9 +3,9 @@
 // </copyright>
 using System;
 using System.Net;
-using APIMATICCalculator.Standard.Models;
+using APIMATICCALCULATOR.Standard.Models;
 
-namespace APIMATICCalculator.Standard
+namespace APIMATICCALCULATOR.Standard
 {
     /// <summary>
     /// IConfiguration.

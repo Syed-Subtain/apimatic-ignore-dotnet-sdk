@@ -8,13 +8,13 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using APIMATICCalculator.Standard;
-using APIMATICCalculator.Standard.Utilities;
+using APIMATICCALCULATOR.Standard;
+using APIMATICCALCULATOR.Standard.Utilities;
 using APIMatic.Core.Utilities.Converters;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
 
-namespace APIMATICCalculator.Standard.Models
+namespace APIMATICCALCULATOR.Standard.Models
 {
     /// <summary>
     /// GetCalculateInput.

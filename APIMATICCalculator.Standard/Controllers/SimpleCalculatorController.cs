@@ -14,13 +14,13 @@ using APIMatic.Core;
 using APIMatic.Core.Types;
 using APIMatic.Core.Utilities;
 using APIMatic.Core.Utilities.Date.Xml;
-using APIMATICCalculator.Standard;
-using APIMATICCalculator.Standard.Http.Client;
-using APIMATICCalculator.Standard.Utilities;
+using APIMATICCALCULATOR.Standard;
+using APIMATICCALCULATOR.Standard.Http.Client;
+using APIMATICCALCULATOR.Standard.Utilities;
 using Newtonsoft.Json.Converters;
 using System.Net.Http;
 
-namespace APIMATICCalculator.Standard.Controllers
+namespace APIMATICCALCULATOR.Standard.Controllers
 {
     /// <summary>
     /// SimpleCalculatorController.

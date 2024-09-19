@@ -8,7 +8,7 @@ using System.Linq;
 using System.Net.Http;
 using APIMatic.Core.Http.Configuration;
 
-namespace APIMATICCalculator.Standard.Http.Client
+namespace APIMATICCALCULATOR.Standard.Http.Client
 {
     /// <summary>
     /// HttpClientConfiguration represents the current state of the Http Client.

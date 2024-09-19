@@ -9,11 +9,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("APIMATICCalculator.Tests")]
+[assembly: AssemblyTitle("APIMATICCALCULATOR.Tests")]
 [assembly: AssemblyDescription("Automatically generated using APIMatic")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("APIMATICCalculator.Tests")]
+[assembly: AssemblyProduct("APIMATICCALCULATOR.Tests")]
 [assembly: AssemblyCopyright("Copyright ©  2016")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

@@ -5,12 +5,12 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.Serialization;
-using APIMATICCalculator.Standard;
-using APIMATICCalculator.Standard.Utilities;
+using APIMATICCALCULATOR.Standard;
+using APIMATICCALCULATOR.Standard.Utilities;
 using APIMatic.Core.Utilities.Converters;
 using Newtonsoft.Json;
 
-namespace APIMATICCalculator.Standard.Models
+namespace APIMATICCALCULATOR.Standard.Models
 {
     /// <summary>
     /// OperationTypeEnum.
