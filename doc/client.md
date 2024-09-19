@@ -16,7 +16,7 @@ ApimaticCalculatorClient client = new ApimaticCalculatorClient.Builder()
     .Build();
 ```
 
-## Apimatic CalculatorClient Class
+## apimatic calculatorClient Class
 
 The gateway for the SDK. This class acts as a factory for the Controllers and also holds the configuration of the SDK.
 
@@ -39,11 +39,11 @@ The gateway for the SDK. This class acts as a factory for the Controllers and al
 | Name | Description | Return Type |
 |  --- | --- | --- |
 | `GetBaseUri(Server alias = Server.Calculator)` | Gets the URL for a particular alias in the current environment and appends it with template parameters. | `string` |
-| `ToBuilder()` | Creates an object of the Apimatic CalculatorClient using the values provided for the builder. | `Builder` |
+| `ToBuilder()` | Creates an object of the apimatic calculatorClient using the values provided for the builder. | `Builder` |
 
-## Apimatic CalculatorClient Builder Class
+## apimatic calculatorClient Builder Class
 
-Class to build instances of Apimatic CalculatorClient.
+Class to build instances of apimatic calculatorClient.
 
 ### Methods
 
