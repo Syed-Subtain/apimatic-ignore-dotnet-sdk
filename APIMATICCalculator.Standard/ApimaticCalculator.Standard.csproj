@@ -8,22 +8,22 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <AssemblyName>apimaticignoredotnetsdk</AssemblyName>
-    <Version>9.6.3.0</Version>
-    <Authors>https://sdks.io</Authors>
+    <AssemblyName>ApimaticignoreSDK</AssemblyName>
+    <Version>1.11.14.0</Version>
+    <Authors>Subtain</Authors>
     <Owners></Owners>
     <Product>ApimaticCalculator.Standard</Product>
     <Copyright>Copyright ©  2019</Copyright>
-    <AssemblyVersion>9.6.3.0</AssemblyVersion>
-    <FileVersion>9.6.3.0</FileVersion>
-    <Description>this is testing</Description>
+    <AssemblyVersion>1.11.14.0</AssemblyVersion>
+    <FileVersion>1.11.14.0</FileVersion>
+    <Description>This is a description</Description>
     <LangVersion>7.3</LangVersion>
     <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
-    <PackageId>apimaticignoredotnetsdk</PackageId>
+    <PackageId>ApimaticignoreSDK</PackageId>
     <PackageTags>test</PackageTags>
-    <RepositoryUrl>https://github.com/syed-subtain/apimatic-ignore-dotnet-sdk.git</RepositoryUrl>
+    <RepositoryUrl>https://github.com/Syed-Subtain/apimatic-ignore-dotnet-sdk.git</RepositoryUrl>
     <PackRepositoryTypeageId>git</PackRepositoryTypeageId>
-    <PackageProjectUrl>https://sdks.io</PackageProjectUrl>
+    <PackageProjectUrl>https://apimatic.io</PackageProjectUrl>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
 
@@ -33,9 +33,6 @@
   <ItemGroup>
     <PackageReference Include= "APIMatic.Core" Version= "0.4.*" />
     <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
-    <AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleTo">
-        <_Parameter1>ApimaticCalculator.Tests</_Parameter1>
-    </AssemblyAttribute>
     <None Include="..\README.md" Pack="true" PackagePath="\"/>
     <None Include="..\LICENSE" Pack="true" PackagePath="\"/>
   </ItemGroup>
