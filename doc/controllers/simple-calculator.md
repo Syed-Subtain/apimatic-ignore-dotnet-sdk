@@ -42,7 +42,7 @@ GetCalculateInput getCalculateInput = new GetCalculateInput
 
 try
 {
-    OperationTypeEnum? result = await simpleCalculatorController.GetCalculateAsync(getCalculateInput);
+    OperationTypeEnum result = await simpleCalculatorController.GetCalculateAsync(getCalculateInput);
 }
 catch (ApiException e)
 {

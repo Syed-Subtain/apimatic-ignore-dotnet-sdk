@@ -66,38 +66,31 @@ namespace ApimaticCalculator.Standard.Models
         public override string ToString()
         {
             var toStringOutput = new List<string>();
-
             this.ToString(toStringOutput);
-
             return $"GetCalculateInput : ({string.Join(", ", toStringOutput)})";
         }
 
         /// <inheritdoc/>
         public override bool Equals(object obj)
         {
-            if (obj == null)
-            {
-                return false;
-            }
+            if (obj is null) return false;
+            if (ReferenceEquals(this, obj)) return true;
 
-            if (obj == this)
-            {
-                return true;
-            }
-            return obj is GetCalculateInput other &&                this.Operation.Equals(other.Operation) &&
-                this.X.Equals(other.X) &&
-                this.Y.Equals(other.Y);
+            return obj is GetCalculateInput other &&
+                (this.Operation.Equals(other.Operation)) &&
+                (this.X.Equals(other.X)) &&
+                (this.Y.Equals(other.Y));
         }
-        
+
         /// <summary>
         /// ToString overload.
         /// </summary>
         /// <param name="toStringOutput">List of strings.</param>
         protected void ToString(List<string> toStringOutput)
         {
-            toStringOutput.Add($"this.Operation = {this.Operation}");
-            toStringOutput.Add($"this.X = {this.X}");
-            toStringOutput.Add($"this.Y = {this.Y}");
+            toStringOutput.Add($"Operation = {this.Operation}");
+            toStringOutput.Add($"X = {this.X}");
+            toStringOutput.Add($"Y = {this.Y}");
         }
     }
 }
